@@ -1,5 +1,5 @@
 <template>
-    <div class="signup lg:pt-16">
+    <div class="signup lg:pt-16 md:pt-16">
         <div class="lg:w-7/12 md:w-7/12 mx-auto w-full bg-white shadow rounded height">
             <h1 class="login-heading pt-16 px-16">SIGNUP</h1>
             <form action="" class="rounded">
@@ -18,9 +18,13 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="flex flex-wrap text-white">
-                        <router-link to="/dashboard" tag="button" class="flex-1 text-left focus:outline-none pl-4 bg-gray py-6">LOGIN</router-link>
-                        <router-link to="/dashboard" tag="button" class="flex-1 text-right focus:outline-none bg-dark pr-4">SIGNUP</router-link>
+                    <div class="flex flex-wrap text-white lg:px-0 md:px-0 px-16">
+                        <div class="w-1/2 bg-gray">
+                            <router-link to="/dashboard" tag="button" class=" text-left focus:outline-none pl-4  py-6">LOGIN</router-link>
+                        </div>
+                        <div class="w-1/2 flex items-center justify-end bg-dark">
+                            <router-link to="/dashboard" tag="button" class=" focus:outline-none pr-4">SIGNUP</router-link>
+                        </div>
                     </div>
                 </div>
             </form>
