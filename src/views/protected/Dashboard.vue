@@ -8,8 +8,7 @@
                 <div class="lg:w-3/12 w-full mb-3">
                     <aside class="sidebar shadow p-4 lg:mr-6 md:mr-6 bg-white">
                         <div class="flex justify-center">
-                            <div class="img-circle border" :style="{'background-image': 'url(\''+ image + '\')'} ">
-<!--                                <img src="../../assets/images/3.jpg" alt="">-->
+                            <div class="img-circle" :style="{'background-image': 'url(\''+ image + '\')'} ">
                             </div>
                         </div>
                         <p class="mt-3 text-center text-styling">Ayanwoye Ayodeji</p>

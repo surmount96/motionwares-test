@@ -4,7 +4,7 @@
             <div class="lg:w-3/12 md:w-3/12 w-full">
                 <img src="@/assets/images/logo.png" alt="">
             </div>
-            <div class="lg:w-3/12 md:w-3/12 w-full footer-styling">
+            <div class="lg:w-3/12 md:w-3/12  mb-4 w-full footer-styling">
                 <h5 class="font-bold">MOTIONWARES</h5>
                 <p>Our Academy</p>
                 <p>Hire a Pro</p>

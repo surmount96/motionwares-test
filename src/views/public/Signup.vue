@@ -1,6 +1,6 @@
 <template>
     <div class="signup lg:pt-16">
-        <div class="lg:w-7/12 md:w-7/12 mx-auto w-full bg-white shadow rounded " style="height: 76.5vh">
+        <div class="lg:w-7/12 md:w-7/12 mx-auto w-full bg-white shadow rounded height">
             <h1 class="login-heading pt-16 px-16">SIGNUP</h1>
             <form action="" class="rounded">
                 <div class="px-16">
@@ -18,9 +18,9 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="flex text-white">
-                        <button class="flex-1 text-left pl-4 bg-gray py-6">LOGIN</button>
-                        <router-link to="/dashboard" tag="button" class="flex-1 text-right bg-red pr-4">SIGNUP</router-link>
+                    <div class="flex flex-wrap text-white">
+                        <router-link to="/dashboard" tag="button" class="flex-1 text-left focus:outline-none pl-4 bg-gray py-6">LOGIN</router-link>
+                        <router-link to="/dashboard" tag="button" class="flex-1 text-right focus:outline-none bg-dark pr-4">SIGNUP</router-link>
                     </div>
                 </div>
             </form>
@@ -55,9 +55,27 @@
     letter-spacing: 1px;
     border-bottom-left-radius: 10px;
 }
-.bg-red{
+.bg-dark{
     background-color: var(--color-primary);
     letter-spacing: 1px;
     border-bottom-right-radius: 10px;
+}
+.height{
+    height: 76.5vh;
+}
+
+@media screen and (max-width: 767px) {
+    .height{
+        height: 100vh;
+    }
+    .rounded{
+        border-radius: unset;
+    }
+    .bg-dark{
+        border-bottom-right-radius: unset;
+    }
+    .bg-gray{
+        border-bottom-left-radius: unset;
+    }
 }
 </style>
