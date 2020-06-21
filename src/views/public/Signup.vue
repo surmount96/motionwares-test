@@ -19,11 +19,16 @@
                 </div>
                 <div class="">
                     <div class="flex flex-wrap text-white lg:px-0 md:px-0 px-16">
-                        <div class="w-1/2 bg-gray">
-                            <router-link to="/dashboard" tag="button" class=" text-left focus:outline-none pl-4  py-6">LOGIN</router-link>
+                        <div class="w-1/2 ">
+                            <div class="bg-gray">
+                                <router-link to="/dashboard" tag="button" class=" text-left focus:outline-none pl-4  py-6">LOGIN</router-link>
+                            </div>
+
                         </div>
-                        <div class="w-1/2 flex items-center justify-end bg-dark">
-                            <router-link to="/dashboard" tag="button" class=" focus:outline-none pr-4">SIGNUP</router-link>
+                        <div class="w-1/2 ">
+                            <div class="bg-dark flex justify-end">
+                                <router-link to="/dashboard" tag="button" class="pr-4 focus:outline-none py-6">SIGNUP</router-link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,16 +63,17 @@
     font-weight: 700;
     letter-spacing: 1px;
     border-bottom-left-radius: 10px;
+    width: 100%;
 }
 .bg-dark{
     background-color: var(--color-primary);
     letter-spacing: 1px;
     border-bottom-right-radius: 10px;
+    width: 100%;
 }
 .height{
     height: 76.5vh;
 }
-
 @media screen and (max-width: 767px) {
     .height{
         height: 100vh;
