@@ -27,7 +27,7 @@
                         </div>
                         <div class="w-1/2 ">
                             <div class="bg-dark flex justify-end">
-                                <router-link to="/dashboard" tag="button" class="pr-4 focus:outline-none py-6">SIGNUP</router-link>
+                                <router-link to="/dashboard" tag="button" class="block pr-4 focus:outline-none py-6">SIGNUP</router-link>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .signup{
     background-image: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)),
     url("../../assets/images/floating-cogs.svg");
@@ -63,13 +63,21 @@
     font-weight: 700;
     letter-spacing: 1px;
     border-bottom-left-radius: 10px;
-    width: 100%;
+    & > button{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
 .bg-dark{
     background-color: var(--color-primary);
     letter-spacing: 1px;
     border-bottom-right-radius: 10px;
-    width: 100%;
+    & > button{
+        display: block;
+        width: 100%;
+        text-align: right;
+      }
 }
 .height{
     height: 76.5vh;
